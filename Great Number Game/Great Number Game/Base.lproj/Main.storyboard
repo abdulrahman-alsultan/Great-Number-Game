@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Great_Number_Game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the Great Number Game" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4eb-Ki-t1p">
+                                <rect key="frame" x="39" y="54" width="336.5" height="25.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am thinking of a number between 1 and 100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vtr-Vk-lbA">
+                                <rect key="frame" x="37.5" y="99.5" width="339.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take a guess!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKb-rA-gdD">
+                                <rect key="frame" x="155.5" y="150.5" width="103.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AWf-SN-zsg">
+                                <rect key="frame" x="150" y="221.5" width="114" height="38.5"/>
+                                <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pu0-eB-bUD">
+                                <rect key="frame" x="172" y="432.5" width="70" height="31"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Submit">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="sbmitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zov-Rg-uIO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AWf-SN-zsg" firstAttribute="top" secondItem="qKb-rA-gdD" secondAttribute="bottom" constant="50" id="8P4-UH-gNb"/>
+                            <constraint firstItem="pu0-eB-bUD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9E3-FZ-d7n"/>
+                            <constraint firstItem="Vtr-Vk-lbA" firstAttribute="top" secondItem="4eb-Ki-t1p" secondAttribute="bottom" constant="20" id="9Ml-j5-Vs1"/>
+                            <constraint firstItem="qKb-rA-gdD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AaC-Vm-8Y8"/>
+                            <constraint firstItem="pu0-eB-bUD" firstAttribute="top" secondItem="AWf-SN-zsg" secondAttribute="bottom" constant="172.5" id="N6U-Yf-8QY"/>
+                            <constraint firstItem="AWf-SN-zsg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="PFx-pu-4et"/>
+                            <constraint firstItem="AWf-SN-zsg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UQN-t1-d2Y"/>
+                            <constraint firstItem="AWf-SN-zsg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WM7-FT-FWK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AWf-SN-zsg" secondAttribute="trailing" constant="150" id="YYU-bw-htg"/>
+                            <constraint firstItem="qKb-rA-gdD" firstAttribute="top" secondItem="Vtr-Vk-lbA" secondAttribute="bottom" constant="30" id="lYQ-TL-X3K"/>
+                            <constraint firstItem="4eb-Ki-t1p" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="mn9-pa-6u3"/>
+                            <constraint firstItem="Vtr-Vk-lbA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pwt-1Z-75U"/>
+                            <constraint firstItem="qKb-rA-gdD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rjN-tp-PZp"/>
+                            <constraint firstItem="4eb-Ki-t1p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ysY-dV-gvr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="editText" destination="AWf-SN-zsg" id="xwF-Sh-8LL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="92.753623188405811" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
